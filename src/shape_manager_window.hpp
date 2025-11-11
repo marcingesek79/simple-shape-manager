@@ -33,7 +33,7 @@ private:
         if (ImGui::TreeNode("Square"))
         {
             static char buf[32] = "Square\0";
-            ImGui::InputText("Label:", buf, 32);
+            ImGui::InputText("Label", buf, 32);
 
             static int size = 100;
             ImGui::InputInt("Size", &size, 10, 100);
