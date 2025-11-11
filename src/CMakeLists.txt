@@ -9,6 +9,7 @@ set(imgui_SOURCES
 
 add_library(imgui OBJECT ${imgui_SOURCES})
 add_library(rlimgui OBJECT ${rlimgui_SOURCE_DIR}/rlImGui.cpp)
+target_link_libraries(rlimgui raylib)
 
 include_directories(${imgui_SOURCE_DIR})
 include_directories(${rlimgui_SOURCE_DIR})
